@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <title>rendex</title>
     <style>
-        /* خلفية الصفحة */
         body {
             background-color: rgb(53, 84, 77);
             margin: 0;
         }
 
-        /* الشريط العلوي */
         .top-bar {
             width: 100%;
             height: 80px;
             background-color: rgb(54, 44, 110);
             border-radius: 20px;
             display: flex;
-            align-items: center;      /* لمحاذاة الصور عموديًا */
-            justify-content: flex-end; /* لوضع الصور على اليمين */
-            padding: 0 20px;          /* مسافة من الطرفين */
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 20px;
             box-sizing: border-box;
-            position: relative;        /* مهم لجعل الصور داخل الشريط */
+            position: relative;
         }
 
-        /* الصور داخل الشريط */
+        /* جميع الصور داخل الشريط */
         .top-bar img {
-            height: 60px;              /* حجم الصورة ثابت بالنسبة للشريط */
-            margin-left: 20px;         /* مسافة بين الصور */
-            border-radius: 50%;        /* جعل الصور دائرية */
-            transition: transform 0.3s; /* تأثير التكبير عند المرور */
-            cursor: pointer;           /* شكل اليد عند المرور */
+            height: 60px;
+            margin-left: 20px;
+            transition: transform 0.3s;
+            cursor: pointer;
         }
 
-        /* تأثير التكبير عند المرور على الصور */
+        /* صورة الشعار دائرية */
+        .top-bar img.logo {
+            border-radius: 50%;
+        }
+
+        /* صورة الزر بدون حواف */
+        .top-bar img.button {
+            border-radius: 0;
+        }
+
+        /* تأثير التكبير عند المرور */
         .top-bar img:hover {
             transform: scale(1.1);
         }
@@ -41,13 +48,12 @@
 </head>
 <body>
 
-    <!-- الشريط العلوي مع الصور -->
     <div class="top-bar">
         <a href="home.html">
-            <img src="logo rendx.png" alt="Logo">
+            <img src="img/logo rendx.png" alt="Logo" class="logo">
         </a>
         <a target="_blank" href="store.html">
-            <img src="button-store.png" alt="Store">
+            <img src="img/button-store.png" alt="Store" class="button">
         </a>
     </div>
 
