@@ -16,16 +16,15 @@
             border-radius: 20px;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: flex-end; /* الصور على اليمين */
             padding: 0 20px;
             box-sizing: border-box;
             position: relative;
         }
 
-        /* جميع الصور داخل الشريط */
         .top-bar img {
             height: 60px;
-            margin-left: 20px;
+            margin-left: 20px; /* مسافة بين الصور */
             transition: transform 0.3s;
             cursor: pointer;
         }
@@ -49,11 +48,11 @@
 <body>
 
     <div class="top-bar">
-        <a href="home.html">
-            <img src="logo rendx.png" alt="Logo" class="logo">
-        </a>
         <a target="_blank" href="store.html">
-            <img src="button-store.png" alt="Store" class="button">
+            <img src="img/button-store.png" alt="Store" class="button">
+        </a>
+        <a href="home.html">
+            <img src="img/logo rendx.png" alt="Logo" class="logo">
         </a>
     </div>
 
