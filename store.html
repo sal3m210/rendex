@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rx_store</title>
+    <title>شروحات</title>
 </head>
-<body align="center">
-    <p><b style="font-size: 100px;">قريبا!</b></p>
-</body>
-</html>
+<body align="right" style="background-color:rgb(53, 84, 77);">
+        <style>
+        body {
+            background-color: rgb(53, 84, 77);
+            margin: 0;
+        }
+
+        .top-bar {
+            width: 100%;
+            height: 80px;
+            background-color: rgb(54, 44, 110);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* الصور على اليمين */
+            padding: 0 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .top-bar img {
+            height: 60px;
+            margin-left: 20px; /* مسافة بين الصور */
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        /* صورة الشعار دائرية */
+        .top-bar img.logo {
+            border-radius: 50%;
+        }
+
+        /* صورة الزر بدون حواف */
+        .top-bar img.button {
+            border-radius: 0;
+        }
+
+        /* تأثير التكبير عند المرور */
+        .top-bar img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="chat.html">
+            <img  src="button-.png" alt="">
+        </a>
+        <a  href="store.html">
+            <img src="button-store.png" alt="Store" class="button">
+        </a>
+        <a target="_blank" href="shorohat.html">
+            <img class="button" src="button-sh.png" alt="">
+        </a>
+        <a href="home.html">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+        
+    </div>
+
+    <style>
+        .box{
+            background-color: aliceblue;
+            border-radius: 30px;
+            padding:10px ;
+            width: 100px;
+            position: relative;left: 880px;top: 300px;
+            text-align: center;
+            box-shadow: rgb(255, 255, 255);
+        }
+    </style>
+
+
+    <div class="box">
+        <h1>قريبا!</h1>
+    </div>
